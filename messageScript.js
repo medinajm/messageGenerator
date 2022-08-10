@@ -1,5 +1,9 @@
 // Creates a random number between 0 and 4.
 const randNum = Math.floor(Math.random() * 5)
+const msgArt = String.raw`--  --
+()  ()
+  /_
+ \__/ `;
 
 const msgCont = {
     today:[["finish that project"], ["take the next step"], ["reach the next level"], ["try something new"], ["make a new memory"]],
@@ -11,6 +15,7 @@ const msgOut = () => {
     console.log(`Today is the day that you'll ${msgCont.today[randNum]}`);
     console.log(`Take a walk and remind yourself that ${msgCont.walk[randNum]}`);
     console.log(`Always remember that you ${msgCont.remember[randNum]}`);
+    console.log(msgArt)
 }
 
 msgOut();
